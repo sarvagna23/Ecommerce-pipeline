@@ -24,7 +24,17 @@ MLflow (2 XGBoost experiments — R2: 0.998)
         ↓
 Streamlit Dashboard (live KPI visualization)
 ```
+## Screenshots
 
+### Airflow DAG
+![Airflow DAG](screenshots/airflow_dag.png)
+
+### MLflow Experiments
+![MLflow](screenshots/mlflow_experiments.png)
+
+### Streamlit Dashboard
+![Dashboard](screenshots/streamlit_dashboard1.png)
+![Dashboard](screenshots/streamlit_dashboard2.png)
 ## Tech Stack
 
 | Tool | Purpose |
@@ -203,6 +213,8 @@ SNOWFLAKE_DATABASE=ECOMMERCE_DB
 SNOWFLAKE_SCHEMA=PUBLIC
 SNOWFLAKE_WAREHOUSE=COMPUTE_WH
 ```
+
+
 
 ## Key Technical Decisions
 
