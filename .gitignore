@@ -1,0 +1,13 @@
+.env
+*.db
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+.venv/
+logs/
+mlruns/
+data/generated/
+*.csv
+dbt_project/target/
+dbt_project/dbt_packages/

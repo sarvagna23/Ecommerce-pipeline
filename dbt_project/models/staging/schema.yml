@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned orders from raw ecommerce data"
+    columns:
+      - name: order_id
+        description: "Unique order identifier"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: total
+        tests:
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['completed', 'returned', 'cancelled', 'pending']
+
+  - name: stg_customers
+    description: "Cleaned customer data"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    description: "Cleaned product catalog"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
